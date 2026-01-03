@@ -701,7 +701,7 @@ Figure&nbsp;3: Steam User Ratings by Year and Revenue Category
 <script type="application/shiny-prerendered" data-context="server">
 library(tidyverse)
 
-Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+Steam_Data <- read_csv("./Data/Steam_Top_Selling_New_Games.csv")
 
 Steam_Data <- Steam_Data %>% mutate(
   user_ratings_total = user_ratings_positive + user_ratings_negative)
@@ -741,7 +741,7 @@ output$freeGamesTable <- renderTable(free_games_data,
 <script type="application/shiny-prerendered" data-context="server">
 library(tidyverse)
 
-Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+Steam_Data <- read_csv("./Data/Steam_Top_Selling_New_Games.csv")
 
 Steam_Data <- Steam_Data %>% mutate(
   user_ratings_total = user_ratings_positive + user_ratings_negative)
@@ -780,7 +780,7 @@ output$delistedGamesTable <- renderTable(delisted_games_data,
 <script type="application/shiny-prerendered" data-context="server">
 library(tidyverse)
 
-Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+Steam_Data <- read_csv("./Data/Steam_Top_Selling_New_Games.csv")
 
 output$genrePlot <- renderPlot(
   {
@@ -827,7 +827,7 @@ output$genrePlot <- renderPlot(
 <script type="application/shiny-prerendered" data-context="server">
 library(tidyverse)
 
-Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+Steam_Data <- read_csv("./Data/Steam_Top_Selling_New_Games.csv")
 
 output$publisherPlot <- renderPlot(
   {
@@ -868,7 +868,7 @@ output$publisherPlot <- renderPlot(
 <script type="application/shiny-prerendered" data-context="server">
 library(tidyverse)
 
-Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+Steam_Data <- read_csv("./Data/Steam_Top_Selling_New_Games.csv")
 
 output$releasePlot <- renderPlot(
   {
@@ -894,7 +894,7 @@ output$releasePlot <- renderPlot(
 <script type="application/shiny-prerendered" data-context="server">
 library(tidyverse)
 
-Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+Steam_Data <- read_csv("./Data/Steam_Top_Selling_New_Games.csv")
 
 # Get the language frequency of the games in the dataset
 get_lang_freq <- function(steam_data, lang_type, year, revenue_category)
@@ -973,7 +973,7 @@ output$languagesPlot <- renderPlot(
 <script type="application/shiny-prerendered" data-context="server">
 library(tidyverse)
 
-Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+Steam_Data <- read_csv("./Data/Steam_Top_Selling_New_Games.csv")
 
 # Get the recommended GPUs frequency from the dataset
 get_gpu_freq <- function(steam_data, year, revenue_category)
@@ -1039,7 +1039,7 @@ output$graphicsPlot <- renderPlot(
 <script type="application/shiny-prerendered" data-context="server">
 library(tidyverse)
 
-Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+Steam_Data <- read_csv("./Data/Steam_Top_Selling_New_Games.csv")
 
 Steam_Data <- Steam_Data %>% mutate(
   user_ratings_total = user_ratings_positive + user_ratings_negative)
