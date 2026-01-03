@@ -16,7 +16,7 @@ The web-scraping script is in the R_Scripts folder as "Steam_Top_Sellers.R"
 The script requires Google Chrome to work because it uses the rvest package from Tidyverse.
 The script was made in November 2025.
 Since then, Steam has changed the HTML structure of its best games webpages and their URLS.
-Due to possible limitations of rvest, the R script opens a new Chrome tab to collect the data of a game.
+Due to possible limitations of rvest, the R script opens a new Chrome tab for every game to collect their data.
 Thus, collecting all the data will involve a lot of RAM usage.
 If the script is executed, all the Chrome tabs can be closed once the script is done.
 
