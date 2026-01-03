@@ -4,6 +4,7 @@
 
 This repository contains the dataset and R files of the article "What Makes New Games Stand Out on PC?"
 Link to article: https://by-bibliotheque.shinyapps.io/Best_Selling_Steam_Games_Analysis/
+The article was originally published on 31/12/2025
 
 To activate dark mode on the webpage, click the tiny toggle icon at the top right corner of the page.
 
