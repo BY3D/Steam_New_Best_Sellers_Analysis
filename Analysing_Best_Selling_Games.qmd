@@ -1108,4 +1108,6 @@ The most commonly recommended graphics cards are approximately in line with the
 graphics cards owned by Steam users. Lastly, Steam users generally leave a positive 
 recommendation for the best selling games they played.
 
-If you are interested in exploring the dataset, click here to access it from Github.
+If you are interested in exploring the dataset, click 
+[here](https://github.com/BY3D/Steam_New_Best_Sellers_Analysis) 
+to access it from Github.
