@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "locale": "en_GB",
+  "platform": "4.5.0",
+  "metadata": {
+    "appmode": "static",
+    "primary_rmd": null,
+    "primary_html": "R_Scripts/Analysing_Best_Selling_Games.html",
+    "content_category": null,
+    "has_parameters": false
+  },
+  "packages": null,
+  "files": {
+    ".RData": {
+      "checksum": "008a98ef6d5f98d1734b861a4b4a3990"
+    },
+    "Data/age_tibble.csv": {
+      "checksum": "47a55381298d130dfb7b3f4342505b29"
+    },
+    "Data/base_tibble.csv": {
+      "checksum": "7f48cfb4d5b011886f24c600f75690cb"
+    },
+    "Data/Other Datasets/age_tibble.csv": {
+      "checksum": "a490cf30a4d444e539794c94462a8f76"
+    },
+    "Data/Other Datasets/base_tibble_alt.csv": {
+      "checksum": "bc9adc9442b8bacd5b4e718e03bd95f7"
+    },
+    "Data/Other Datasets/partial_tibble_alt.csv": {
+      "checksum": "133fc84c726d26f754569f932c764bdc"
+    },
+    "Data/Other Datasets/price_tibble.csv": {
+      "checksum": "be2cc42496d14dc6b8976dd9d0e20303"
+    },
+    "Data/Other Datasets/Steam_Top_Selling_New_Games_Old.csv": {
+      "checksum": "4af3fb4a2e2e988d5129c9f2f4f88157"
+    },
+    "Data/Other Datasets/Steam_Top_Selling_New_Games_Old_Backup.csv": {
+      "checksum": "fb546197cf107315ac45f95850cf750c"
+    },
+    "Data/Other Datasets/unformatted_dataset.csv": {
+      "checksum": "cf477d01fab3d7ae2303a451d4837548"
+    },
+    "Data/partial_tibble.csv": {
+      "checksum": "87753578726447b0108a86c048d3e2f4"
+    },
+    "Data/price_tibble.csv": {
+      "checksum": "37870125fbe109736b0c2dde2d5e31e0"
+    },
+    "Data/pub_tibble.csv": {
+      "checksum": "4265aa29e5ea31fb7e3a567d1679c0ae"
+    },
+    "Data/Steam_Best_Selling_Games.csv": {
+      "checksum": "ec74bdf68d980a9f4e3a658464d4df83"
+    },
+    "Data/Steam_Top_Selling_New_Games.csv": {
+      "checksum": "ec74bdf68d980a9f4e3a658464d4df83"
+    },
+    "Data/Steam_Top_Selling_New_Games_Backup1.csv": {
+      "checksum": "2794b7cd60c789ce559967370811244e"
+    },
+    "Data/Steam_Top_Selling_New_Games_Backup2.csv": {
+      "checksum": "be23774bbfbb3879b682c0d73ea0a883"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games.html": {
+      "checksum": "9695db4bf84e5ce13fc6a1ade01efdcc"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games.qmd": {
+      "checksum": "efce73dcd74fe8fef48b7274b30263a1"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/figure-html/fig-game_age_ratings-1.png": {
+      "checksum": "01cf4d98248ed4723d96eba7c13b373a"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/figure-html/fig-game_age_ratings-1.svg": {
+      "checksum": "4ff7652b51d49b4a28310c86c0d95413"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/figure-html/fig-game_p_rice-1.png": {
+      "checksum": "7381ee46a3d4200694d459ec2d075e8c"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/figure-html/fig-game_price-1.png": {
+      "checksum": "3160f41e99748e03269be036928b4091"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/figure-html/fig-game_price-1.svg": {
+      "checksum": "64358e69ce34b406292d8aa3ff73f729"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/figure-html/fig-game_publishers-1.png": {
+      "checksum": "7b82cc2f32e59608ace64ec4a970b7ec"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/figure-html/fig-game_user_ratings-1.png": {
+      "checksum": "47d0799fc484147385d2867b34cfb274"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/figure-html/fig-game_user_ratings-1.svg": {
+      "checksum": "3e1f25d1184946d69f90ce119ee7054d"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/figure-html/unnamed-chunk-11-1.png": {
+      "checksum": "d11e82fc9b1865f5806c52ab2f99b559"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/figure-html/unnamed-chunk-14-1.png": {
+      "checksum": "d11e82fc9b1865f5806c52ab2f99b559"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/figure-html/unnamed-chunk-7-1.png": {
+      "checksum": "d11e82fc9b1865f5806c52ab2f99b559"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/bootstrap/bootstrap-bb462d781dde1847d9e3ccf7736099dd.min.css": {
+      "checksum": "bb462d781dde1847d9e3ccf7736099dd"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/bootstrap/bootstrap-dark-1c59215f878e034bd7426c637fa661ac.min.css": {
+      "checksum": "1c59215f878e034bd7426c637fa661ac"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/bootstrap/bootstrap-dark-dcdbd4229c042143516303aa0bffbc93.min.css": {
+      "checksum": "dcdbd4229c042143516303aa0bffbc93"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/bootstrap/bootstrap-e2e3c37bd630dceadc4b14c54f1a1dcc.min.css": {
+      "checksum": "e2e3c37bd630dceadc4b14c54f1a1dcc"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/bootstrap/bootstrap-icons.css": {
+      "checksum": "2318f137d201fbf51601fa0faba6bef7"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/bootstrap/bootstrap-icons.woff": {
+      "checksum": "1a51dfbe5467607389d603c02a77cd10"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/bootstrap/bootstrap.min.js": {
+      "checksum": "e2b09c06f0e714b6144a6788a28e3950"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/clipboard/clipboard.min.js": {
+      "checksum": "15f52a1ee547f2bdd46e56747332ca2d"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/quarto-html/anchor.min.js": {
+      "checksum": "91bcf6cd1fd88fec3f109811e5fc3546"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/quarto-html/popper.min.js": {
+      "checksum": "3a4a291ccf3f1ea0f82b641542fd3827"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css": {
+      "checksum": "37eea08aefeeee20ff55810ff984fec1"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css": {
+      "checksum": "2fef5ea3f8957b3e4ecc936fc74692ca"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/quarto-html/quarto.js": {
+      "checksum": "6f4245742deb3cc92337dbe2701ccfe1"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/quarto-html/tabsets/tabsets.js": {
+      "checksum": "e8d6a8862b33ccc461f8fd532e05b365"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/quarto-html/tippy.css": {
+      "checksum": "ebd6f8ce46a677e1a4f5f8a8317109a9"
+    },
+    "R_Scripts/Analysing_Best_Selling_Games_files/libs/quarto-html/tippy.umd.min.js": {
+      "checksum": "d828775275749701b48bd9d958814111"
+    },
+    "R_Scripts/Steam_Data_Analysis.R": {
+      "checksum": "30455217b2e5c6eddd79fb1ac4fffad3"
+    },
+    "R_Scripts/Steam_Top_Sellers.R": {
+      "checksum": "9eb4aba4ac22c20e8d557127f51a2e0b"
+    },
+    "R_Scripts/Tests_Notes.R": {
+      "checksum": "c5a185a607dcd05cd372cb22469e86e5"
+    },
+    "Steam_Samples/2358720.json": {
+      "checksum": "e7a89c622f4e373b420521ea967a9dc8"
+    },
+    "Steam_Samples/game.js": {
+      "checksum": "28e6bf525c4fbc8db12fd6ff788c0073"
+    },
+    "Steam_Samples/SteamGamePageSample.html": {
+      "checksum": "80be2be268722a51f55f4c1932033f3b"
+    },
+    "Steam_Samples/SteamPageSample.html": {
+      "checksum": "4a7bd6fbe07ac38aeb72cb76a420b72b"
+    }
+  },
+  "users": null
+}
