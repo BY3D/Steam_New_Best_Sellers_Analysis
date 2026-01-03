@@ -28,3 +28,4 @@ If the script is executed, all the Chrome tabs can be closed once the script is 
 2. Potentially include the newly added bronze category to the dataset.
 3. Modify the web-scraping script to be more memory efficient. I will either try Selenium in R or use Python tools.
 4. Make the dark mode toggle in the top right corner of the webpage more visible in the light theme. 
+5. Replace Shiny elements with an independent alternative, or switch to ShinyLive
