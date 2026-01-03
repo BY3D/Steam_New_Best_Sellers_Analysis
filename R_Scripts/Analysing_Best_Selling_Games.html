@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Belal Yousofzai">
+<meta name="dcterms.date" content="2025-12-31">
+
+<title>What Makes New Games Stand Out on PC?</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Analysing_Best_Selling_Games_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Analysing_Best_Selling_Games_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="Analysing_Best_Selling_Games_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="Analysing_Best_Selling_Games_files/libs/quarto-html/popper.min.js"></script>
+<script src="Analysing_Best_Selling_Games_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Analysing_Best_Selling_Games_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Analysing_Best_Selling_Games_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Analysing_Best_Selling_Games_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="Analysing_Best_Selling_Games_files/libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="Analysing_Best_Selling_Games_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="Analysing_Best_Selling_Games_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Analysing_Best_Selling_Games_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Analysing_Best_Selling_Games_files/libs/bootstrap/bootstrap-bb462d781dde1847d9e3ccf7736099dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="Analysing_Best_Selling_Games_files/libs/bootstrap/bootstrap-dark-1c59215f878e034bd7426c637fa661ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="Analysing_Best_Selling_Games_files/libs/bootstrap/bootstrap-bb462d781dde1847d9e3ccf7736099dd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">What Makes New Games Stand Out on PC?</h1>
+            <p class="subtitle lead">An Inquiry on Steam’s Top Selling New Games</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Belal Yousofzai </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">31 Dec 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#why-focus-on-steam" id="toc-why-focus-on-steam" class="nav-link" data-scroll-target="#why-focus-on-steam">Why Focus on Steam?</a></li>
+  </ul></li>
+  <li><a href="#finding-the-best-selling-games" id="toc-finding-the-best-selling-games" class="nav-link" data-scroll-target="#finding-the-best-selling-games">Finding the Best Selling Games</a></li>
+  <li><a href="#analysing-the-games" id="toc-analysing-the-games" class="nav-link" data-scroll-target="#analysing-the-games">Analysing the Games</a>
+  <ul class="collapse">
+  <li><a href="#acquiring-the-data" id="toc-acquiring-the-data" class="nav-link" data-scroll-target="#acquiring-the-data">Acquiring the Data</a></li>
+  <li><a href="#the-pricing" id="toc-the-pricing" class="nav-link" data-scroll-target="#the-pricing">The Pricing</a></li>
+  <li><a href="#outlier-games" id="toc-outlier-games" class="nav-link" data-scroll-target="#outlier-games">Outlier Games</a>
+  <ul class="collapse">
+  <li><a href="#free-to-play-games" id="toc-free-to-play-games" class="nav-link" data-scroll-target="#free-to-play-games">Free to Play Games</a></li>
+  <li><a href="#delisted-games" id="toc-delisted-games" class="nav-link" data-scroll-target="#delisted-games">Delisted Games</a></li>
+  </ul></li>
+  <li><a href="#the-genres" id="toc-the-genres" class="nav-link" data-scroll-target="#the-genres">The Genres</a></li>
+  <li><a href="#the-publishers" id="toc-the-publishers" class="nav-link" data-scroll-target="#the-publishers">The Publishers</a></li>
+  <li><a href="#the-age-ratings" id="toc-the-age-ratings" class="nav-link" data-scroll-target="#the-age-ratings">The Age Ratings</a></li>
+  <li><a href="#the-release-dates" id="toc-the-release-dates" class="nav-link" data-scroll-target="#the-release-dates">The Release Dates</a></li>
+  <li><a href="#the-languages" id="toc-the-languages" class="nav-link" data-scroll-target="#the-languages">The Languages</a></li>
+  <li><a href="#the-recommended-graphics-cards" id="toc-the-recommended-graphics-cards" class="nav-link" data-scroll-target="#the-recommended-graphics-cards">The Recommended Graphics Cards</a></li>
+  <li><a href="#the-user-ratings" id="toc-the-user-ratings" class="nav-link" data-scroll-target="#the-user-ratings">The User Ratings</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Thousands of exciting new video games are published for PCs every year. Among these new video games, their characteristics and features widely vary. Yet, only a small number of them sell well enough to be financially noteworthy. In particular, the most popular PC video game platform, Steam, showcases its best selling new video games on a yearly basis. In this article, we will examine Steam’s best selling video games across different categories to understand what it is that potentially makes them sell so well.</p>
+<section id="why-focus-on-steam" class="level2">
+<h2 class="anchored" data-anchor-id="why-focus-on-steam">Why Focus on Steam?</h2>
+<p>Created by Valve Software in 2003, Steam has served as a convenient service to distribute and play PC video games.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Since its inception, Steam has become the dominant video game platform on PC with more than 36 million registered users<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> across the world<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> and has amassed a library of more than 30 thousand games<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<p>While there are other online game platforms on PC, only a few are on a comparable scale to Steam in terms of library size and registered user count. The most significant ones are Microsoft’s Xbox service on PC and Epic Game’s Epic Game Store.</p>
+<p>In the case of Microsoft, it has increasingly offered its once-exclusive Xbox games on Steam in recent years, such that almost all of its games are readily available on Steam now. Third party games are usually released simultaneously on Steam and Xbox, so sales data will likely be identical across both platforms. More importantly for this analysis, the data on Xbox’s best selling new games on PC is not easily accessible like Steam’s data.</p>
+<p>As for the Epic Game Store, the number of third party games being published on its platform is minuscule when compared to Steam. The Epic Game Store is significantly younger than Steam, meaning that the data available does not go so far back. Although the Epic Game Store has a larger PC user base of 295 million<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>, most of these users are concentrated in playing a few pre-existing games, one of which being Fortnite. In essence, the Epic Games Store lacks robust data for an analysis of the most popular new games sold on PC.</p>
+</section>
+</section>
+<section id="finding-the-best-selling-games" class="level1">
+<h1>Finding the Best Selling Games</h1>
+<p>Every year, Steam announces its best games of the year in terms of revenue earned and peak player count. While Steam has been announcing its best games since 2017, only the webpages for 2022 and onward still exist. For the newly released games of a year, their ranking is calculated from the revenue earned in the first two weeks after launch<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>. I assume Steam includes revenue earned from game keys sold by third party retailers as well. Now instead of specifying each game’s revenue rank, the games are grouped into a top selling category of either platinum, gold, or silver. From what I have seen, games that sold in the hundreds of thousands to low millions are listed as silver, games sold in the few millions or more are listed as gold, and games that sold beyond that are listed as platinum.</p>
+<p>As of December 2025, Steam has added a bronze rank to its top selling categories. This analysis will be updated in due time to include the recently released 2025 data and additional bronze ranked games. Unfortunately, Steam has taken down its webpage for 2021 and it is possible that the webpage for 2022 will eventually disappear.</p>
+<p>Should you wish to see the best selling game lists directly, links are offered here:</p>
+<p><a href="https://store.steampowered.com/charts/bestofyear/2025">Best of 2025</a></p>
+<p><a href="https://store.steampowered.com/charts/bestofyear/2024">Best of 2024</a></p>
+<p><a href="https://store.steampowered.com/charts/bestofyear/2023">Best of 2023</a></p>
+<p><a href="https://store.steampowered.com/charts/bestofyear/2022">Best of 2022</a></p>
+</section>
+<section id="analysing-the-games" class="level1">
+<h1>Analysing the Games</h1>
+<section id="acquiring-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="acquiring-the-data">Acquiring the Data</h2>
+<p>To understand what makes the best selling games potentially stand out from the competition, their data needs be extracted for analysis. However, Steam does not seem to have official APIs for its store data. Thus, a web-scraping script was made in R to collect the data of all the best selling games. 2022 was selected as the starting year because 2021 lacked a silver category, which would have skewed the distribution of the data with extra gold and platinum games.</p>
+<p>In making a web scraping script for this analysis, some unexpected challenges came about. The first was that the data points for each game were downloaded from their respective storefront webpage, which meant interacting with numerous web elements that were not always fixed in position. The next challenge was with handling absent values or values that did not follow a specified format. The last challenge was with Steam’s age verification page acting as a blockade. After accounting for all these troubles, my script was able to successfully collect the data of the 150 games from the years 2022 to 2024. Further explanations of the web scraping issues encountered are covered in their respective sections.</p>
+</section>
+<section id="the-pricing" class="level2">
+<h2 class="anchored" data-anchor-id="the-pricing">The Pricing</h2>
+<p>Let us begin with the prices of the games. Game prices were collected in USD because sales taxes are not included in the price and that games sold in developed markets have similar prices when exchange rates are factored in. The exchange rate table below is provided as a reference.</p>
+<table class="table-striped caption-top table">
+<caption>1 USD is approximately equivalent to</caption>
+<thead>
+<tr class="header">
+<th>Currency</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>EUR</td>
+<td>0.85</td>
+</tr>
+<tr class="even">
+<td>GBP</td>
+<td>0.75</td>
+</tr>
+<tr class="odd">
+<td>AUD</td>
+<td>1.55</td>
+</tr>
+<tr class="even">
+<td>CAD</td>
+<td>1.40</td>
+</tr>
+<tr class="odd">
+<td>JPY</td>
+<td>155</td>
+</tr>
+<tr class="even">
+<td>CNY</td>
+<td>7.10</td>
+</tr>
+</tbody>
+</table>
+<p>Now onto the graph. Free to play games and de-listed games are excluded from this section.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-game_price" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-game_price-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Analysing_Best_Selling_Games_files/figure-html/fig-game_price-1.svg" style="width:90.0%;height:80.0%" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-game_price-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Distribution of Game Price by Year
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>From the above graph, we can see that even though game pricing is varied, a $60 list price is the most common. Note that in 2024, numerous game companies did increase their standard retail price to $70. In the dataset, the median list price is $50 whereas the average list price is $48 ± 5 (depending on year and revenue category).</p>
+<p>It is important to consider that games sold on Steam tend to have regional pricing in place. Regional pricing is to price a game in line with the economic conditions of a country, rather than at a price that was simply converted from the base currency of the game. The effect of regional pricing is at its greatest for games sold in developing countries. Taking an example game from the dataset: <a href="https://store.steampowered.com/app/2358720/">Black Myth Wukong</a> is listed at $60 USD. However, in its home market China the price is 268 CNY which is 37.75 USD, that is a 37% reduction.</p>
+</section>
+<section id="outlier-games" class="level2">
+<h2 class="anchored" data-anchor-id="outlier-games">Outlier Games</h2>
+<p>Some of the games in the dataset are either free to own or unavailable to purchase. Let us take a look at these games before moving on to the next sections.</p>
+<section id="free-to-play-games" class="level3">
+<h3 class="anchored" data-anchor-id="free-to-play-games">Free to Play Games</h3>
+<p>Since only 5% of the games from the dataset are free to play, they are presented in a table. The main highlight is that all the games are action oriented, with two of the games having card-based gameplay. Interestingly, the user ratings are not the best for these games. It’s likely because players who otherwise would not play these games still give them a try because they are free. Or these free to play games may not have the friendliest monetisation schemes.</p>
+<div class="cell">
+<div class="cell-output-display no-overflow-x">
+<div id="freeGamesTable" class="shiny-html-output shiny-table-output"></div>
+</div>
+</div>
+</section>
+<section id="delisted-games" class="level3">
+<h3 class="anchored" data-anchor-id="delisted-games">Delisted Games</h3>
+<p>7% of the best selling games from the dataset have already been withdrawn from Steam’s storefront. Except for <a href="https://store.steampowered.com/app/1818750/">Multiversus</a>, all the games are about sports or motorsports. As for why the games have been removed so soon, it could simply be because of licensing restrictions. Another reason could be that it is more profitable to have players buy a whole new game every year than to release add-ons for the existing games.</p>
+<div class="cell">
+<div class="cell-output-display no-overflow-x">
+<div id="delistedGamesTable" class="shiny-html-output shiny-table-output"></div>
+</div>
+</div>
+</section>
+</section>
+<section id="the-genres" class="level2">
+<h2 class="anchored" data-anchor-id="the-genres">The Genres</h2>
+<p>On Steam, publishers give their games a set of official genre tags to help players know more about the games they intend to play. Below is an interactive graph that lets you view the most common genre tags among the games in the dataset.</p>
+<div class="panel-grid layout-sidebar ms-md-0 layout-sidebar-left">
+<div class="cell panel-sidebar card bg-light p-2 g-col-24 g-col-lg-7">
+<div class="cell-output-display no-overflow-x">
+<div class="form-group shiny-input-container">
+<label class="control-label" id="genreCategory-label" for="genreCategory">Select Category</label>
+<div>
+<select id="genreCategory" class="shiny-input-select"><option value="All" selected="">All</option>
+<option value="Platinum">Platinum</option>
+<option value="Gold">Gold</option>
+<option value="Silver">Silver</option></select>
+<script type="application/json" data-for="genreCategory" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+</div>
+</div>
+</div>
+<div class="cell-output-display no-overflow-x">
+<div class="form-group shiny-input-container">
+<label class="control-label" id="genreYear-label" for="genreYear">Select Year</label>
+<div>
+<select id="genreYear" class="shiny-input-select"><option value="All" selected="">All</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option></select>
+<script type="application/json" data-for="genreYear" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+</div>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="shiny-plot-output html-fill-item" id="genrePlot" style="width:100%;height:400px;"></div>
+</div>
+</div>
+<div class="panel-fill panel-grid g-col-24 g-col-lg-17 pt-3 pt-lg-0">
+<div class="g-col-24">
+<div class="cell panel-fill">
+<div class="cell-output-display">
+<div class="shiny-plot-output html-fill-item" id="genrePlot" style="width:100%;height:600px;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>From the above interactive graph, the most popular genre tags by far are action, adventure, and RPG. Action essentially means a game with challenges, such as combat. Adventure refers to a game that has a story. RPG stands for Role Playing Game. RPGs can be thought of as adventure games that offer deep character customisation.</p>
+<p>Why would action games be the most popular? For a start, action as a subject matter can be conveyed well in the form a a video game. Whereas action in films can be rough or short lived, and limited in books, video games allow players the opportunity to engage in continuous, safe, and fun action. Furthermore, if we assume that the general demographic of Steam consists of young men, then having the action genre be the most popular is self explanatory.</p>
+<p>To give some examples of what games from the different genres are like, a representative action game can be <a href="https://store.steampowered.com/app/1778820/">Tekken 8</a>. While the game somewhat has a story, it is primarily about two opponents engaged in intense hand-to-hand combat. A representative adventure game can be <a href="https://store.steampowered.com/app/1332010/">Stray</a>. The game is about a lonesome cat uncovering the mysteries of a grotty futuristic city. A representative RPG game can be <a href="https://store.steampowered.com/app/2701660/">Dragon Quest III</a>. That game is about a young hero and his (or her) allies who set off on a grand quest to defeat the villainous fiend that threatens their fantasy world. Genre tags can be treated as suggestions on what a game is like. Even Steam does not seem to have strong guidelines on what genres a game should be put into.</p>
+</section>
+<section id="the-publishers" class="level2">
+<h2 class="anchored" data-anchor-id="the-publishers">The Publishers</h2>
+<p>92 publishers released the 150 games in the dataset. However, only some of the publishers had more than one best selling game. Rather than overwhelming ourselves with these one-off publishers, let us examine the more successful publishers in the interactive graph below. Only 10 publishers are shown, sorted by the number of games they have in the dataset.</p>
+<div class="panel-grid layout-sidebar ms-md-0 layout-sidebar-left">
+<div class="cell panel-sidebar card bg-light p-2 g-col-24 g-col-lg-7">
+<div class="cell-output-display no-overflow-x">
+<div class="form-group shiny-input-container">
+<label class="control-label" id="publisherCategory-label" for="publisherCategory">Select Category</label>
+<div>
+<select id="publisherCategory" class="shiny-input-select"><option value="All" selected="">All</option>
+<option value="Platinum">Platinum</option>
+<option value="Gold">Gold</option>
+<option value="Silver">Silver</option></select>
+<script type="application/json" data-for="publisherCategory" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+</div>
+</div>
+</div>
+<div class="cell-output-display no-overflow-x">
+<div class="form-group shiny-input-container">
+<label class="control-label" id="publisherYear-label" for="publisherYear">Select Year</label>
+<div>
+<select id="publisherYear" class="shiny-input-select"><option value="All" selected="">All</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option></select>
+<script type="application/json" data-for="publisherYear" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+</div>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="shiny-plot-output html-fill-item" id="publisherPlot" style="width:100%;height:400px;"></div>
+</div>
+</div>
+<div class="panel-fill panel-grid g-col-24 g-col-lg-17 pt-3 pt-lg-0">
+<div class="g-col-24">
+<div class="cell panel-fill">
+<div class="cell-output-display">
+<div class="shiny-plot-output html-fill-item" id="publisherPlot" style="width:100%;height:600px;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="panel-fill panel-grid">
+<div class="g-col-24">
+<div class="cell panel-fill" data-context="server">
+
+</div>
+</div>
+</div>
+<p>The most popular publisher overall is Electronic Arts (EA). This is mainly because EA owns some of the most globally popular video game series. To name a few of the series: FIFA, Formula 1, The Sims, Battlefield, and Need for Speed. Considering that EA already has its own PC platform, Origin/EA App, the additional strong sales of its games on Steam signifies its dominance in the PC game market.</p>
+<p>PlayStation and SEGA follow EA in having the most best selling games in the dataset. PlayStation’s appearance is significant. Until recently, games published by PlayStation were only available on its own consoles. I believe that Sony Interactive Entertainment, the company in charge of PlayStation, recognised that the PC gaming market has matured to the stage where convincing a sizeable portion of current PC players to get a PlayStation 5 to play exclusive games would not be economically possible. In a similar move to Microsoft, Sony has released most of its commercially successful games onto Steam over the past 5 years.</p>
+<p>Sony and Microsoft are not alone in bringing over their exclusive games to Steam. SEGA, Square Enix, Ubisoft, and other large publishers have been releasing more of their existing games on Steam. In recent years, many of these publishers now simultaneously launch their games on consoles and Steam. Previously, particularly before the Covid-19 pandemic, many large publishers would only release some of their games on PC one year after their release on consoles and they would often be available only on their own distribution platforms. Even though PC game platform competition is now dwindling, online sentiment of Steam’s natural monopolisation has been positive. PC players generally prefer Steam when given the choice.</p>
+</section>
+<section id="the-age-ratings" class="level2">
+<h2 class="anchored" data-anchor-id="the-age-ratings">The Age Ratings</h2>
+<p>Now for the age ratings. In the graph below, games rated for teenagers and adults sold the most on Steam. This is understandable as Steam is meant for users aged 13 and above. Most of the age 3 games in the dataset are just sports games. Games primarily meant for children do not seem to be that popular on Steam. If we were to think about the popular games children usually play, they are often played on mobile devices, game consoles such as the Nintendo Switch or PlayStation 4/5, or on PC platforms other than Steam.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-game_age_ratings" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-game_age_ratings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Analysing_Best_Selling_Games_files/figure-html/fig-game_age_ratings-1.svg" style="width:90.0%;height:80.0%" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-game_age_ratings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: PEGI Age Ratings by Year and Revenue Category
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>To learn more about PEGI, click <a href="https://pegi.info">here</a>. The PEGI age rating system is made for Europe. However, it is used in some other regions of the world as well. A PEGI rating recommends the minimum age for a video game based on how appropriate its subject matter is. PEGI was chosen because of its intuitiveness and popularity. PEGI’s age ratings tend to be in line with other organisations’ ratings. To learn more about the age rating systems of other organisations, click <a href="https://www.globalratings.com">here</a>.</p>
+<p>When collecting the PEGI age ratings for the games on Steam, I discovered that many of the games surprisingly did not have an age rating label on Steam. Thus, I had to manually fill in the missing values with the ones from PEGI’s website. Still, not all the games in the dataset have been rated by PEGI, so some missing values are to be expected.</p>
+</section>
+<section id="the-release-dates" class="level2">
+<h2 class="anchored" data-anchor-id="the-release-dates">The Release Dates</h2>
+<p>Let us find out what are the most and least popular months to publish a game on Steam in the interactive graph below.</p>
+<div class="panel-grid layout-sidebar ms-md-0 layout-sidebar-left">
+<div class="cell panel-sidebar card bg-light p-2 g-col-24 g-col-lg-7">
+<div class="cell-output-display no-overflow-x">
+<div class="form-group shiny-input-container">
+<label class="control-label" id="releaseCategory-label" for="releaseCategory">Select Category</label>
+<div>
+<select id="releaseCategory" class="shiny-input-select"><option value="All" selected="">All</option>
+<option value="Platinum">Platinum</option>
+<option value="Gold">Gold</option>
+<option value="Silver">Silver</option></select>
+<script type="application/json" data-for="releaseCategory" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+</div>
+</div>
+</div>
+<div class="cell-output-display no-overflow-x">
+<div class="form-group shiny-input-container">
+<label class="control-label" id="releaseYear-label" for="releaseYear">Select Year</label>
+<div>
+<select id="releaseYear" class="shiny-input-select"><option value="All" selected="">All</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option></select>
+<script type="application/json" data-for="releaseYear" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+</div>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="shiny-plot-output html-fill-item" id="releasePlot" style="width:100%;height:400px;"></div>
+</div>
+</div>
+<div class="panel-fill panel-grid g-col-24 g-col-lg-17 pt-3 pt-lg-0">
+<div class="g-col-24">
+<div class="cell panel-fill">
+<div class="cell-output-display">
+<div class="shiny-plot-output html-fill-item" id="releasePlot" style="width:100%;height:600px;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Surprisingly, September is the most popular month overall. Considering that is the month many people return to school in, I was expecting the summer or the end of the year to be the most popular. Interestingly, July is the least popular month for publishing games. I do not have a definite answer for the results here, so this is something worth following up on.</p>
+</section>
+<section id="the-languages" class="level2">
+<h2 class="anchored" data-anchor-id="the-languages">The Languages</h2>
+<p>On Steam, the language support of a game is recognised by three categories: interface, subtitles, and full audio. The interface consists of the text elements of a game, such as the menus, manuals, and safety warnings. Subtitles are the descriptive texts of a game’s audio. Full audio means that the game has voiced dialogue.</p>
+<p>In the dataset, I found that if a game has a supported interface language, then the subtitles (if they exist) will be available in that supported language. Thus, support for interfaces and subtitles overlap. Not all games in the dataset have any voiced dialogue, so their support for full audio is blank. Let us examine the supported languages further in the interactive graph below.</p>
+<div class="panel-grid layout-sidebar ms-md-0 layout-sidebar-left">
+<div class="cell panel-sidebar card bg-light p-2 g-col-24 g-col-lg-7">
+<div class="cell-output-display no-overflow-x">
+<div class="form-group shiny-input-container">
+<label class="control-label" id="languageType-label" for="languageType">Select Audio Type</label>
+<div>
+<select id="languageType" class="shiny-input-select"><option value="Interface/Subtitles" selected="">Interface/Subtitles</option>
+<option value="Full Audio">Full Audio</option></select>
+<script type="application/json" data-for="languageType" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+</div>
+</div>
+</div>
+<div class="cell-output-display no-overflow-x">
+<div class="form-group shiny-input-container">
+<label class="control-label" id="languageCategory-label" for="languageCategory">Select Category</label>
+<div>
+<select id="languageCategory" class="shiny-input-select"><option value="All" selected="">All</option>
+<option value="Platinum">Platinum</option>
+<option value="Gold">Gold</option>
+<option value="Silver">Silver</option></select>
+<script type="application/json" data-for="languageCategory" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+</div>
+</div>
+</div>
+<div class="cell-output-display no-overflow-x">
+<div class="form-group shiny-input-container">
+<label class="control-label" id="languageYear-label" for="languageYear">Select Year</label>
+<div>
+<select id="languageYear" class="shiny-input-select"><option value="All" selected="">All</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option></select>
+<script type="application/json" data-for="languageYear" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+</div>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="shiny-plot-output html-fill-item" id="languagesPlot" style="width:100%;height:400px;"></div>
+</div>
+</div>
+<div class="panel-fill panel-grid g-col-24 g-col-lg-17 pt-3 pt-lg-0">
+<div class="g-col-24">
+<div class="cell panel-fill">
+<div class="cell-output-display">
+<div class="shiny-plot-output html-fill-item" id="languagesPlot" style="width:100%;height:610px;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>While all the games in the dataset support English interfaces, almost all of them support French and German interfaces. It is a pleasure to see so many games be available in multiple languages. Perhaps in this case it is the least common languages that are the most interesting ones. <a href="https://store.steampowered.com/app/671860/">Battlebit Remastered</a> is the one game in the dataset that supports Belarusian, Estonian, Macedonian, and Slovak. Only <a href="https://store.steampowered.com/app/2300320/">Farming Simulator 25</a> supports Romanian. Three Playstation games support Croatian, specifically <a href="https://store.steampowered.com/app/1888930/">The Last of Us Part I</a>, <a href="https://store.steampowered.com/app/2215430/">Ghost of Tschushima Directors Cut</a>, and <a href="https://store.steampowered.com/app/2322010/">God of War Ragnarok</a>. For comparison, Steam’s interface is available in 26 languages.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
+<p>For Full Audio, only <a href="https://store.steampowered.com/app/2537590/">Microsoft Flight Simulator 2024</a> (MSFS 24) supports Finnish, Norwegian, and Swedish. I believe that for MSFS 24, the majority of its voices are produced by AI, that was the case for MSFS 2020 at least. <a href="https://store.steampowered.com/app/1643320/">S.T.A.L.K.E.R. 2: Heart of Chornobyl</a> is the one game with Ukrainian full audio support. The Last of Us Part I and God of War Ragnarok have Greek full audio support. The Last of Us Part I and MSFS 24 are the only games to have Turkish full audio support.</p>
+</section>
+<section id="the-recommended-graphics-cards" class="level2">
+<h2 class="anchored" data-anchor-id="the-recommended-graphics-cards">The Recommended Graphics Cards</h2>
+<p>For every game on Steam, publishers or developers can list the minimum and recommended graphics cards for their games. Usually, if a player’s PC meets the recommended requirements, then he or she will be able to enjoy the game on high graphics setting at a resolution of 1920x1080 at 60 frames per second. The interactive graph below reveals the most commonly recommended graphics cards for the games in the dataset.</p>
+<div class="panel-grid layout-sidebar ms-md-0 layout-sidebar-left">
+<div class="cell panel-sidebar card bg-light p-2 g-col-24 g-col-lg-7">
+<div class="cell-output-display no-overflow-x">
+<div class="form-group shiny-input-container">
+<label class="control-label" id="graphicsCompany-label" for="graphicsCompany">Select Company</label>
+<div>
+<select id="graphicsCompany" class="shiny-input-select"><option value="All" selected="">All</option>
+<option value="AMD">AMD</option>
+<option value="Intel">Intel</option>
+<option value="Nvidia">Nvidia</option></select>
+<script type="application/json" data-for="graphicsCompany" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+</div>
+</div>
+</div>
+<div class="cell-output-display no-overflow-x">
+<div class="form-group shiny-input-container">
+<label class="control-label" id="graphicsCategory-label" for="graphicsCategory">Select Category</label>
+<div>
+<select id="graphicsCategory" class="shiny-input-select"><option value="All" selected="">All</option>
+<option value="Platinum">Platinum</option>
+<option value="Gold">Gold</option>
+<option value="Silver">Silver</option></select>
+<script type="application/json" data-for="graphicsCategory" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+</div>
+</div>
+</div>
+<div class="cell-output-display no-overflow-x">
+<div class="form-group shiny-input-container">
+<label class="control-label" id="graphicsYear-label" for="graphicsYear">Select Year</label>
+<div>
+<select id="graphicsYear" class="shiny-input-select"><option value="All" selected="">All</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option></select>
+<script type="application/json" data-for="graphicsYear" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+</div>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="shiny-plot-output html-fill-item" id="graphicsPlot" style="width:100%;height:400px;"></div>
+</div>
+</div>
+<div class="panel-fill panel-grid g-col-24 g-col-lg-17 pt-3 pt-lg-0">
+<div class="g-col-24">
+<div class="cell panel-fill">
+<div class="cell-output-display">
+<div class="shiny-plot-output html-fill-item" id="graphicsPlot" style="width:100%;height:600px;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>To summarise the findings, graphic cards that are designed to play the latest games (at the time of their release) at 1920x1080 or 2560x1440 on high graphics settings are the most commonly recommended graphics cards. Currently, the most commonly owned graphics card among Steam users is the Nvidia GeForce RTX 4060 for laptops.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> That is a formidable processor. Therefore, many Steam players will be able to enjoy the majority of the best selling games in the dataset at the recommended graphics settings.</p>
+<p>One issue with collecting this data is that publishers are not obligated to follow a standard format when writing out the requirements for their games. Thus, a lot of parsing and manual correcting were needed to make the graphics cards data uniform. As an example, some game requirements would have the “Nvidia GeForce GTX 1660” abbreviated as “GTX 1660”.</p>
+</section>
+<section id="the-user-ratings" class="level2">
+<h2 class="anchored" data-anchor-id="the-user-ratings">The User Ratings</h2>
+<p>On Steam, users can leave a review that either recommends or does not recommend the game they played. From the dataset, more than 5 million reviews posted within one month of a game’s release date were counted with 4.1 million of them being positive (81.85%) and 900 thousand being negative (18.15%).</p>
+<p>To read the box plot figure below, the coloured boxes represent the middle 50% of the user rating data points. The black line in the coloured box is the median of the data points. The lines extending out of the boxes represent the minimum and maximum values of the data points. Data points placed beyond the lines are outliers. A stretched out box with long lines implies that the data points are quite scattered. For a greater explanation of box plots, click <a href="https://wellbeingatschool.org.nz/information-sheet/understanding-and-interpreting-box-plots">here</a>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-game_user_ratings" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-game_user_ratings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Analysing_Best_Selling_Games_files/figure-html/fig-game_user_ratings-1.svg" style="width:90.0%;height:80.0%" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-game_user_ratings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Steam User Ratings by Year and Revenue Category
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Overall, most games tend to have a rating in the range of 60% to 90%. Regarding the outliers in the above figure, we have two of them: <a href="https://store.steampowered.com/app/2338770/">NBA 2K24</a> at 13% and Microsoft Flight Simulator 2024 (MSFS 24) at 38%. NBA 2K24 is by far the worst rated game in the dataset and is one of the lowest rated games on Steam to date. MSFS 24, while low, ended up as an outlier because the rest of the games in its category were rated significantly higher. Generally, PC players post negative ratings when they experience technical problems such as audio glitches or visual stuttering. For MSFS 24, many of its user reviews complained about download and streaming problems. Many of the reviews also complained about the simulator feeling like an unfinished product.</p>
+<p>To know more about the worst rated games in the dataset, below is a table of the games with a user rating less than 60%. These games make up 14% of the dataset.</p>
+<div class="cell">
+<div class="cell-output-display no-overflow-x">
+<div style="height:450px; overflow-y: scroll">
+<div id="userRatingTable" class="shiny-html-output shiny-table-output"></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>After examining the 150 best selling games on Steam, some noticeable features stand out. For a start, $60 USD games are most commonly sought after by Steam users. However, games across the price range are still being bought up. The action, adventure, and RPG genres are the most popular genres. Players enjoy a story with challenge and customisation. Large high-budget publishers produce many of the best selling games. Naturally, their games are designed for and marketed to a varied global audience. Games rated for ages 12 and up are purchased the most by Steam users. People looking to publish games designed for children may not expect to earn the greatest revenue on Steam.</p>
+<p>The most popular month to publish a game in is September. Whereas the least popular month to publish a game in is July. Early Autumn, late Winter, and late Spring are the most common time periods for a game to be released. In terms of language support, the most popular languages are English, German, French, Spanish, Japanese, Chinese, and Korean. For games with voiced audio, English is the #1 most supported language. The most commonly recommended graphics cards are approximately in line with the graphics cards owned by Steam users. Lastly, Steam users generally leave a positive recommendation for the best selling games they played.</p>
+<p>If you are interested in exploring the dataset, click here to access it from Github.</p>
+<p>
+<script type="application/shiny-prerendered" data-context="server">
+library(tidyverse)
+
+Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+
+Steam_Data <- Steam_Data %>% mutate(
+  user_ratings_total = user_ratings_positive + user_ratings_negative)
+
+Steam_Data <- Steam_Data %>% mutate(
+  user_ratings_pct = round(
+    (user_ratings_positive / (user_ratings_positive + user_ratings_negative)), 
+    digits = 2))
+
+free_games_data <- Steam_Data %>% 
+  filter(price_USD == 0) %>%
+  arrange(year_published, month_published) %>%
+  mutate(year_published = as.integer(year_published),
+         age_rating_PEGI = as.integer(age_rating_PEGI)) %>%
+  select(title, 
+         publisher, 
+         month_published, 
+         year_published, 
+         top_sell_category, 
+         age_rating_PEGI, 
+         user_ratings_pct) %>%
+  rename(Title = title,
+         Publisher = publisher,
+         "Month Published" = month_published,
+         "Year Published" = year_published,
+         "Revenue Category" = top_sell_category,
+         "Age Rating" = age_rating_PEGI,
+         "User Rating %" = user_ratings_pct)
+
+
+output$freeGamesTable <- renderTable(free_games_data, 
+                                     striped = TRUE,
+                                     hover = TRUE)
+
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+library(tidyverse)
+
+Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+
+Steam_Data <- Steam_Data %>% mutate(
+  user_ratings_total = user_ratings_positive + user_ratings_negative)
+
+Steam_Data <- Steam_Data %>% mutate(
+  user_ratings_pct = round(
+    (user_ratings_positive / (user_ratings_positive + user_ratings_negative)), 
+    digits = 2))
+
+delisted_games_data <- Steam_Data %>% 
+  filter(is.na(price_USD)) %>%
+  arrange(year_published, month_published) %>%
+  mutate(year_published = as.integer(year_published),
+         age_rating_PEGI = as.integer(age_rating_PEGI)) %>%
+  select(title, 
+         publisher, 
+         month_published, 
+         year_published, 
+         top_sell_category, 
+         age_rating_PEGI, 
+         user_ratings_pct) %>%
+  rename(Title = title,
+         Publisher = publisher,
+         "Month Published" = month_published,
+         "Year Published" = year_published,
+         "Revenue Category" = top_sell_category,
+         "Age Rating" = age_rating_PEGI,
+         "User Rating %" = user_ratings_pct)
+
+output$delistedGamesTable <- renderTable(delisted_games_data, 
+                                         striped = TRUE,
+                                         hover = TRUE)
+
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+library(tidyverse)
+
+Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+
+output$genrePlot <- renderPlot(
+  {
+    games <- Steam_Data
+    plot_subtitle <- "For All Games"
+    if (!str_detect(input$genreYear, "All"))
+    {
+      games <- games %>% filter(year_published == as.numeric(input$genreYear))
+      plot_subtitle <- paste0("For ", input$genreYear)
+    }
+    if (!str_detect(input$genreCategory, "All"))
+    {
+      games <- games %>% filter(top_sell_category == input$genreCategory)
+      plot_subtitle <- paste0("For ", input$genreCategory)
+    }
+    # Put all individual tags of the games into a table
+    all_genre_tags <- c()
+    for (raw_genre_tags in games$genre)
+    {
+      tags <- str_split_1(raw_genre_tags, coll("|"))
+      all_genre_tags <- append(all_genre_tags, tags) 
+    }
+    genre_tags_data <- sort(table(all_genre_tags), decreasing = FALSE)
+    # Plot the data
+    ggplot(data = data.frame(genre_tags_data),
+           aes(y = all_genre_tags,
+               x = Freq)) +
+      geom_col(width = 0.7,
+               position = "dodge2",
+               fill = rgb(0.15, 0.26, 0.65),
+               show.legend = FALSE) +
+      theme_classic() +
+      theme(axis.title.y = element_blank()) +
+      labs(title = "Most Popular Genre Tags",
+           subtitle = plot_subtitle,
+           y = "Genre",
+           x = "Number of Games in the Genre")
+  },
+  res = 95
+)
+
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+library(tidyverse)
+
+Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+
+output$publisherPlot <- renderPlot(
+  {
+    max_publishers <- 12 # There are too many publishers to show, limit it
+    min_games <- 0 # Many publishers only appear once, exclude them
+    publisher_data <- Steam_Data
+    if (!str_detect(input$publisherYear, "All"))
+      publisher_data <- publisher_data %>% 
+      filter(year_published == input$publisherYear)
+    if (!str_detect(input$publisherCategory, "All"))
+      publisher_data <- publisher_data %>% 
+      filter(top_sell_category == input$publisherCategory)
+    publisher_data <- publisher_data %>%
+      count(publisher) %>%
+      filter(n > min_games) %>%
+      arrange(n) %>%
+      slice_tail(n = max_publishers)
+    publisher_tibble <- as_tibble(publisher_data)
+    max_publish_count <- max(publisher_tibble$n)
+    # Plot the data
+    ggplot(data = publisher_data,
+           aes(x = reorder(publisher, n),
+               y = n)) +
+      geom_col(fill = rgb(0.15, 0.26, 0.65)) +
+      geom_text(aes(label = paste0(n), hjust = -0.5)) +
+      scale_y_continuous(limits = c(0, max_publish_count * 1.1)) +
+      coord_flip() +
+      theme_classic() +
+      theme(axis.title.y = element_blank()) +
+      labs(title = "Most Popular Publishers",
+           x = "Publisher",
+           y = "Number of Games Listed")
+  },
+  res = 95
+)
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+library(tidyverse)
+
+Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+
+output$releasePlot <- renderPlot(
+  {
+    release_data <- Steam_Data
+    if (!str_detect(input$releaseYear, "All"))
+      release_data <- release_data %>% 
+        filter(year_published == input$releaseYear)
+    if (!str_detect(input$releaseCategory, "All"))
+      release_data <- release_data %>% 
+        filter(top_sell_category == input$releaseCategory)
+    ggplot(data = release_data, 
+           aes(x = month_published)) +
+      geom_bar(fill = rgb(0.15, 0.26, 0.65)) +
+      theme_classic() +
+      labs(x = "Month",
+           y = "Number of Games Released")
+  },
+  res = 95
+)
+
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+library(tidyverse)
+
+Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+
+# Get the language frequency of the games in the dataset
+get_lang_freq <- function(steam_data, lang_type, year, revenue_category)
+{
+  if (!str_detect(year, "All")) 
+    steam_data <- steam_data %>% filter(year_published == year)
+  if (!str_detect(revenue_category, "All")) 
+    steam_data <- steam_data %>% filter(top_sell_category == revenue_category)
+  all_langs <- c()
+  if (str_detect(lang_type, "Interface/Subtitles")) 
+    choice <- steam_data$languages_interface
+  else if (str_detect(lang_type, "Full Audio")) 
+    choice <- steam_data$languages_spoken
+  for (raw_langs in choice)
+  {
+    if (is.na(raw_langs)) next
+    langs <- str_split_1(raw_langs, coll("|"))
+    all_langs <- append(all_langs, langs) 
+  }
+  return(sort(table(all_langs), decreasing = FALSE))
+}
+
+output$languagesPlot <- renderPlot(
+  {
+    filtered_data <- Steam_Data
+    if (str_detect(input$languageType, "Interface/Subtitles"))
+    {
+      filtered_data <- filter(filtered_data, !is.na(Steam_Data$languages_interface))
+      game_count <- as.numeric(count(filtered_data))
+    }
+    if (str_detect(input$languageType, "Full Audio"))
+    {
+      filtered_data <- filter(filtered_data, !is.na(Steam_Data$languages_spoken))
+      game_count <- as.numeric(count(filtered_data))
+    }
+    if (!str_detect(input$languageCategory, "All"))
+    {
+      filtered_data <- filter(filter(filtered_data, 
+                                     filtered_data$top_sell_category == input$languageCategory))
+      game_count <- as.numeric(count(filtered_data))
+    }
+    if (!str_detect(input$languageYear, "All"))
+    {
+      filtered_data <- filter(filtered_data, 
+                              filtered_data$year_published == input$languageYear)
+      game_count <- as.numeric(count(filtered_data))
+    }
+    language_data <- get_lang_freq(Steam_Data, 
+                                   input$languageType, 
+                                   input$languageYear, 
+                                   input$languageCategory)
+    # Plot the data
+    ggplot(data = data.frame(language_data),
+           aes(y = all_langs,
+               x = Freq)) +
+      geom_col(width = 0.7,
+               position = "dodge2",
+               fill = rgb(0.15, 0.26, 0.65),
+               show.legend = FALSE) +
+      geom_text(aes(label = paste0(round(Freq/game_count * 100), "%"), 
+                    hjust = -0.2)
+      ) +
+      scale_x_continuous(limits = c(0, max(language_data) * 1.1)) +
+      theme_classic() +
+      theme(axis.title.y = element_blank()) +
+      labs(title = "Language Support in Games",
+           #y = "Languages",
+           x = "Number of Games Supporting the Language")
+  },
+  res = 95,
+  execOnResize = TRUE
+)
+
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+library(tidyverse)
+
+Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+
+# Get the recommended GPUs frequency from the dataset
+get_gpu_freq <- function(steam_data, year, revenue_category)
+{
+  if (!str_detect(year, "All")) 
+    steam_data <- steam_data %>% filter(year_published == year)
+  if (!str_detect(revenue_category, "All")) 
+    steam_data <- steam_data %>% filter(top_sell_category == revenue_category)
+  all_gpus <- c()
+  for (raw_gpus in steam_data$recommended_graphics)
+  {
+    if (is.na(raw_gpus)) next
+    gpus <- str_split_1(str_to_upper(raw_gpus), coll("|"))
+    all_gpus <- append(all_gpus, gpus) 
+  }
+  return(as_tibble(table(all_gpus)))
+}
+
+# Filter GPUs by company
+get_gpus_by_company <- function(gpu_data, gpu_company)
+{
+  max_gpus_to_show <- 12 # Many GPUs only appear once, exclude them for brevity
+  name_start <- 1L
+  gpu_company <- str_to_upper(gpu_company)
+  if (!str_detect(gpu_company, "ALL"))
+  {
+    gpu_data <- gpu_data %>% 
+      filter(str_detect(all_gpus, gpu_company))
+  }
+  if (str_detect(gpu_company, "NVIDIA")) name_start <- 16L
+  else if (str_detect(gpu_company, "AMD")) name_start <- 12L
+  else if (str_detect(gpu_company, "INTEL")) name_start <- 7L
+  gpu_data <- gpu_data %>% 
+    arrange(n) %>%
+    mutate(all_gpus = str_sub(all_gpus, start = name_start)) %>%
+    slice_tail(n = max_gpus_to_show) %>%
+    rename(gpu_name = all_gpus)
+  return(gpu_data)
+}
+
+output$graphicsPlot <- renderPlot(
+  {
+    graphics_data <- get_gpu_freq(Steam_Data, 
+                                  input$graphicsYear, 
+                                  input$graphicsCategory)
+    graphics_data <- get_gpus_by_company(graphics_data, input$graphicsCompany)
+    ggplot(data = graphics_data,
+           aes(y = fct_reorder(gpu_name, n),
+               x = n)) +
+      geom_col(fill = rgb(0.15, 0.26, 0.65),
+               show.legend = FALSE) +
+      theme_classic() +
+      theme(axis.title.y = element_blank()) +
+      labs(title = "Most Recommended Graphics Cards",
+           y = "Graphics Card",
+           x = "Number of Games Recommending the Graphics Card")
+  },
+  res = 95
+)
+
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+library(tidyverse)
+
+Steam_Data <- read_csv("../Data/Steam_Top_Selling_New_Games.csv")
+
+Steam_Data <- Steam_Data %>% mutate(
+  user_ratings_total = user_ratings_positive + user_ratings_negative)
+
+Steam_Data <- Steam_Data %>% mutate(
+  user_ratings_pct = round(
+    (user_ratings_positive / (user_ratings_positive + user_ratings_negative)), 
+    digits = 2))
+
+ratings_data <- Steam_Data %>% filter(user_ratings_pct < 0.6)
+
+ratings_data <- ratings_data %>% arrange(user_ratings_pct)
+
+ratings_data <- ratings_data %>% select(title, 
+                                        publisher, 
+                                        top_sell_category,
+                                        user_ratings_pct,
+                                        user_ratings_total,
+                                        user_ratings_positive,
+                                        user_ratings_negative
+)
+
+ratings_data <- ratings_data %>% mutate(user_ratings_total = 
+                                          as.integer(user_ratings_total),
+                                        user_ratings_positive =
+                                          as.integer(user_ratings_positive),
+                                        user_ratings_negative = 
+                                          as.integer(user_ratings_negative)
+)
+
+ratings_data <- ratings_data %>% rename(Title = title,
+                                        Publisher = publisher,
+                                        "Revenue Category" = top_sell_category,
+                                        "User Ratings %" = user_ratings_pct,
+                                        "Total User Ratings" = user_ratings_total,
+                                        "Positive User Ratings" = user_ratings_positive,
+                                        "Negative User Ratings" = user_ratings_negative
+)
+
+output$userRatingTable <- renderTable(ratings_data, 
+                                      striped = TRUE,
+                                      hover = TRUE,
+                                      spacing = "m")
+
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server-extras">
+ojs_define <- function(..., .session = shiny::getDefaultReactiveDomain()) {
+  quos <- rlang::enquos(...)
+  vars <- rlang::list2(...)
+  nm <- names(vars)
+  if (is.null(nm)) {
+    nm <- rep_len("", length(vars))
+  }
+  mapply(
+    function(q, nm, val) {
+      # Infer name, if possible
+      if (nm == "") {
+        tryCatch(
+          {
+            nm <- rlang::as_name(q)
+          },
+          error = function(e) {
+            code <- paste(collapse = "\n", deparse(rlang::f_rhs(q)))
+            stop(
+              "ojs_define() could not create a name for the argument: ",
+              code
+            )
+          }
+        )
+      }
+      .session$output[[nm]] <- val
+      outputOptions(.session$output, nm, suspendWhenHidden = FALSE)
+      .session$sendCustomMessage("ojs-export", list(name = nm))
+      NULL
+    },
+    quos,
+    nm,
+    vars,
+    SIMPLIFY = FALSE,
+    USE.NAMES = FALSE
+  )
+  invisible()
+}
+</script>
+</p>
+<!--html_preserve-->
+<script type="application/shiny-prerendered" data-context="dependencies">
+{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["selectize"]},{"type":"character","attributes":{},"value":["0.15.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/shared/selectize"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["js/selectize.min.js","accessibility/js/selectize-plugin-a11y.min.js"]},{"type":"character","attributes":{},"value":["css/selectize.bootstrap3.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["shiny"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.12.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["selectize"]},{"type":"character","attributes":{},"value":["0.15.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/shared/selectize"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["js/selectize.min.js","accessibility/js/selectize-plugin-a11y.min.js"]},{"type":"character","attributes":{},"value":["css/selectize.bootstrap3.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["shiny"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.12.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["htmltools-fill"]},{"type":"character","attributes":{},"value":["0.5.8.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["fill"]}]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["fill.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["htmltools"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.5.8.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["htmltools-fill"]},{"type":"character","attributes":{},"value":["0.5.8.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["fill"]}]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["fill.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["htmltools"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.5.8.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["selectize"]},{"type":"character","attributes":{},"value":["0.15.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/shared/selectize"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["js/selectize.min.js","accessibility/js/selectize-plugin-a11y.min.js"]},{"type":"character","attributes":{},"value":["css/selectize.bootstrap3.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["shiny"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.12.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["selectize"]},{"type":"character","attributes":{},"value":["0.15.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/shared/selectize"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["js/selectize.min.js","accessibility/js/selectize-plugin-a11y.min.js"]},{"type":"character","attributes":{},"value":["css/selectize.bootstrap3.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["shiny"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.12.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["htmltools-fill"]},{"type":"character","attributes":{},"value":["0.5.8.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["fill"]}]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["fill.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["htmltools"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.5.8.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["htmltools-fill"]},{"type":"character","attributes":{},"value":["0.5.8.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["fill"]}]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["fill.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["htmltools"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.5.8.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["selectize"]},{"type":"character","attributes":{},"value":["0.15.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/shared/selectize"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["js/selectize.min.js","accessibility/js/selectize-plugin-a11y.min.js"]},{"type":"character","attributes":{},"value":["css/selectize.bootstrap3.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["shiny"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.12.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["selectize"]},{"type":"character","attributes":{},"value":["0.15.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/shared/selectize"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["js/selectize.min.js","accessibility/js/selectize-plugin-a11y.min.js"]},{"type":"character","attributes":{},"value":["css/selectize.bootstrap3.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["shiny"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.12.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["htmltools-fill"]},{"type":"character","attributes":{},"value":["0.5.8.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["fill"]}]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["fill.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["htmltools"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.5.8.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["htmltools-fill"]},{"type":"character","attributes":{},"value":["0.5.8.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["fill"]}]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["fill.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["htmltools"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.5.8.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["selectize"]},{"type":"character","attributes":{},"value":["0.15.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/shared/selectize"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["js/selectize.min.js","accessibility/js/selectize-plugin-a11y.min.js"]},{"type":"character","attributes":{},"value":["css/selectize.bootstrap3.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["shiny"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.12.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["selectize"]},{"type":"character","attributes":{},"value":["0.15.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/shared/selectize"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["js/selectize.min.js","accessibility/js/selectize-plugin-a11y.min.js"]},{"type":"character","attributes":{},"value":["css/selectize.bootstrap3.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["shiny"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.12.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["selectize"]},{"type":"character","attributes":{},"value":["0.15.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/shared/selectize"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["js/selectize.min.js","accessibility/js/selectize-plugin-a11y.min.js"]},{"type":"character","attributes":{},"value":["css/selectize.bootstrap3.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["shiny"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.12.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["htmltools-fill"]},{"type":"character","attributes":{},"value":["0.5.8.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["fill"]}]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["fill.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["htmltools"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.5.8.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["htmltools-fill"]},{"type":"character","attributes":{},"value":["0.5.8.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["fill"]}]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["fill.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["htmltools"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.5.8.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["selectize"]},{"type":"character","attributes":{},"value":["0.15.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/shared/selectize"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["js/selectize.min.js","accessibility/js/selectize-plugin-a11y.min.js"]},{"type":"character","attributes":{},"value":["css/selectize.bootstrap3.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["shiny"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.12.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["selectize"]},{"type":"character","attributes":{},"value":["0.15.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/shared/selectize"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["js/selectize.min.js","accessibility/js/selectize-plugin-a11y.min.js"]},{"type":"character","attributes":{},"value":["css/selectize.bootstrap3.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["shiny"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.12.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["selectize"]},{"type":"character","attributes":{},"value":["0.15.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["www/shared/selectize"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["js/selectize.min.js","accessibility/js/selectize-plugin-a11y.min.js"]},{"type":"character","attributes":{},"value":["css/selectize.bootstrap3.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["shiny"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.12.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["htmltools-fill"]},{"type":"character","attributes":{},"value":["0.5.8.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["fill"]}]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["fill.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["htmltools"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.5.8.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["htmltools-fill"]},{"type":"character","attributes":{},"value":["0.5.8.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["fill"]}]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["fill.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["htmltools"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.5.8.1"]}]}]}
+</script>
+<!--/html_preserve-->
+<!--html_preserve-->
+<script type="application/shiny-prerendered" data-context="execution_dependencies">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages","version"]},"class":{"type":"character","attributes":{},"value":["data.frame"]},"row.names":{"type":"integer","attributes":{},"value":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70]}},"value":[{"type":"character","attributes":{},"value":["base","bit","bit64","bslib","cachem","cli","compiler","crayon","datasets","digest","dplyr","evaluate","farver","fastmap","forcats","generics","ggplot2","glue","graphics","grDevices","grid","gtable","hms","htmltools","htmlwidgets","httpuv","jquerylib","jsonlite","knitr","labeling","later","lifecycle","lubridate","magrittr","memoise","methods","mime","otel","parallel","pillar","pkgconfig","promises","purrr","R6","RColorBrewer","Rcpp","readr","rlang","rmarkdown","rstudioapi","sass","scales","shiny","stats","stringi","stringr","tibble","tidyr","tidyselect","tidyverse","timechange","tools","tzdb","utils","vctrs","vroom","withr","xfun","xtable","yaml"]},{"type":"character","attributes":{},"value":["4.5.0","4.6.0","4.6.0-1","0.9.0","1.1.0","3.6.5","4.5.0","1.5.3","4.5.0","0.6.37","1.1.4","1.0.4","2.1.2","1.2.0","1.0.0","0.1.4","3.5.2","1.8.0","4.5.0","4.5.0","4.5.0","0.3.6","1.1.3","0.5.8.1","1.6.4","1.6.16","0.1.4","2.0.0","1.50","0.4.3","1.4.4","1.0.4","1.9.4","2.0.3","2.0.1","4.5.0","0.13","0.2.0","4.5.0","1.10.2","2.0.3","1.5.0","1.0.4","2.6.1","1.1-3","1.0.14","2.1.5","1.1.6","2.30","0.17.1","0.4.10","1.4.0","1.12.1","4.5.0","1.8.7","1.5.1","3.3.0","1.3.1","1.2.1","2.0.0","0.3.0","4.5.0","0.5.0","4.5.0","0.6.5","1.6.5","3.0.2","0.52","1.8-4","2.3.10"]}]}]}
+</script>
+<!--/html_preserve-->
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>About Valve https://www.valvesoftware.com/en/about<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Steam Daily User Count https://store.steampowered.com/charts<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Countries Steam is Used in https://store.steampowered.com/stats/content/<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>About Steam https://store.steampowered.com/about/<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Epic Games Store 2024 Year In Review https://store.epicgames.com/en-US/news/epic-games-store-2024-year-in-review<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Explanation of Sales Ranking https://help.steampowered.com/en/faqs/view/6C17-2BC1-2A01-9B76<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Steam Language-Support Information https://partner.steamgames.com/doc/store/localization/languages<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Hardware Used by Steam Users: https://store.steampowered.com/hwsurvey/<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
