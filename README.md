@@ -9,7 +9,7 @@ Link to article: https://by-bibliotheque.shinyapps.io/Best_Selling_Steam_Games_A
 
 To activate dark mode on the webpage, click the tiny toggle icon at the top right corner of the page.
 
-The 150 game dataset is in the Data folder as "Steam_Top_Selling_New_Games.csv"
+The 150 game dataset is in the Data folder as "Steam_Best_Selling_Games.csv"
 
 ## The Web Scraping Script
 
