@@ -19,9 +19,9 @@ The script requires Google Chrome to work because it uses the rvest package from
 The script was made in November 2025.
 Since then, Steam has changed the HTML structure of its best games webpages and their URLS.
 Thus, the XPaths and CSS Paths in the R script may need to be adjusted.
-Due to possible limitations of rvest, the R script opens a new Chrome tab for every game to collect their data.
-Thus, collecting all the data will involve a lot of RAM usage.
-If the script is executed, all the Chrome tabs can be closed once the script is done.
+Due to possible limitations of rvest, the R script opens a new Chrome tab for every game to collect its data.
+Thus, collecting all the data will involve a lot of RAM usage from open Chrome tabs.
+After the script is executed, all the Chrome tabs can be safely closed.
 
 ## Necessary Packages
 R 4.5.0
