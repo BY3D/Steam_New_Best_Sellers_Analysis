@@ -18,14 +18,24 @@ The web-scraping script is in the R_Scripts folder as "Steam_Top_Sellers.R"
 The script requires Google Chrome to work because it uses the rvest package from Tidyverse.
 The script was made in November 2025.
 Since then, Steam has changed the HTML structure of its best games webpages and their URLS.
+Thus, the XPaths and CSS Paths in the R script may need to be adjusted.
 Due to possible limitations of rvest, the R script opens a new Chrome tab for every game to collect their data.
 Thus, collecting all the data will involve a lot of RAM usage.
 If the script is executed, all the Chrome tabs can be closed once the script is done.
 
+## Necessary Packages
+R 4.5.0
+RStudio
+Tidyverse
+rvest
+httr2
+rjson
+
 ## Future Plans For This Analysis Project
 
-1. Update the article to include Steam's 2025 data (when they finalise it).
-2. Potentially include the newly added bronze category to the dataset.
-3. Modify the web-scraping script to be more memory efficient. I will either try Selenium in R or use Python tools.
-4. Make the dark mode toggle in the top right corner of the webpage more visible in the light theme. 
-5. Replace Shiny elements with an independent alternative, or switch to ShinyLive
+1. Replace the Shiny plots with ShinyLive or with ObservableJS plots.
+2. Host the article on a more permanent server, such as Github or elsewhere
+3. Update the article to include Steam's 2025 data (when Valve finalises it).
+4. Potentially include the newly added bronze category to the dataset.
+5. Modify the web-scraping script to be more memory efficient. I will either try Selenium in R or use Python tools.
+6. Make the dark mode toggle in the top right corner of the webpage more visible in the light theme. 
