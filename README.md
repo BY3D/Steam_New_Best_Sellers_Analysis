@@ -11,6 +11,8 @@ To activate dark mode on the webpage, click the tiny toggle icon at the top righ
 
 The 150 game dataset is in the Data folder as "Steam_Best_Selling_Games.csv"
 
+The article itself is in the "Analysing_Best_Selling_Games.qmd" file.
+
 ## The Web Scraping Script
 
 The web-scraping script is in the R_Scripts folder as "Steam_Top_Sellers.R"
