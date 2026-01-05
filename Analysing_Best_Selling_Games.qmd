@@ -1017,7 +1017,7 @@ Overall, most games tend to have a rating in the range of 60% to 90%.
 Regarding the outliers in the above figure, we have two of them: 
 [NBA 2K24](https://store.steampowered.com/app/2338770/) at 13% 
 and Microsoft Flight Simulator 2024 (MSFS 24) at 38%. NBA 2K24 is by far the worst 
-rated game in the dataset and is one of the lowest rated games on Steam to date. 
+rated game in the dataset. 
 MSFS 24, while low, ended up as an outlier because the rest of the games in its 
 category were rated significantly higher. Generally, PC players post negative 
 ratings when they experience technical problems such as audio glitches or visual 
