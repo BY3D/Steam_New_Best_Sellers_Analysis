@@ -23,12 +23,17 @@ Due to possible limitations of rvest, the R script opens a new Chrome tab for ev
 Thus, collecting all the data will involve a lot of RAM usage from open Chrome tabs.
 After the script is executed, all the Chrome tabs can be safely closed.
 
-## Necessary Packages
-R 4.5.0
+## Necessary Software and Packages to Run the R Scripts
+R - version 4.5.0
+
 RStudio
+
 Tidyverse
+
 rvest
+
 httr2
+
 rjson
 
 ## Future Plans For This Analysis Project
