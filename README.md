@@ -43,7 +43,7 @@ rjson
 ## Future Plans For This Analysis Project
 
 1. Create a self-contained offline version of the article with ShinyLive
-2. Host the article on a more permanent server, such as on Github or elsewhere
+2. Host the article on a more permanent server, such as Github or elsewhere
 3. Update the article to include Steam's 2025 data (when Valve finalises it).
 4. Potentially include the newly added bronze category to the dataset.
 5. Modify the web-scraping script to be more memory efficient. I will either try Selenium in R or use Python tools.
