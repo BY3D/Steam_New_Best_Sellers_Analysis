@@ -1,21 +1,20 @@
 # An Analysis of the Best Selling New Games on Steam
 
-## Basic Information
+## Introduction
 
-This repository contains the dataset and R files of the article "What Makes New Games Stand Out on PC?"
-The article was originally published on 31/12/2025
+This repository contains the dataset and R files of the article **What Makes New Games Stand Out on PC?**
 
 Link to article: https://by-bibliotheque.shinyapps.io/Best_Selling_Steam_Games_Analysis/
 
-To activate dark mode on the webpage, click the tiny toggle icon at the top right corner of the page.
+The article was originally published on 31/12/2025. To activate dark mode on the webpage, click the tiny toggle icon at the top right corner of the page.
 
-The 150 game dataset is in the Data folder as "Steam_Best_Selling_Games.csv"
+The 150 game dataset is in the Data folder as `Steam_Best_Selling_Games.csv`
 
-The article itself is in the "Analysing_Best_Selling_Games.qmd" file.
+The article itself is in the `Analysing_Best_Selling_Games.qmd` file.
 
 ## The Web Scraping Script
 
-The web-scraping script is in the R_Scripts folder as "Steam_Top_Sellers.R"
+The web-scraping script is in the R_Scripts folder as `Steam_Top_Sellers.R`
 
 The script requires Google Chrome to work because it uses the rvest package from Tidyverse.
 The script was made in November 2025.
